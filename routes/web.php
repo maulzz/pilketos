@@ -25,7 +25,7 @@ Route::put('admin/monitoring', [VotingController::class, 'voting_setting']) -> m
 // admin route end
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect()->route('login');
 });
 
 
